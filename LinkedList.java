@@ -87,4 +87,29 @@ public static void main(String[] args){
     Node head = ConvertArr2LL(arr);
     System.out.print(head.data);
 }
+
+public void insertAtBeginning(int data){
+    Node newNode = new Node(data);
+
+    newNode.next = head; //Step 1: link new node to old head
+    head = newNode;      //Step 2: new node becomes head
+}
+
+// 10 -> 20 -> 30 -> null
+
+public class Main{
+    public static void main(String[] args){
+        LinkedList List = new LinkedList();
+
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+
+        list.insertAtBeginnig(5);
+
+        list.display();
+    }
+}
+// 5 -> 10 -> 20 -> 30 -> null
+
     
