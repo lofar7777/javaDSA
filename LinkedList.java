@@ -44,6 +44,10 @@ public class LinkedList {
         list.insert(20);
         list.insert(30);
 
+        list.insertAtBeginning(5);
+
+        list.insertAtPosition(15, 1);  // Insert at index 1
+
         list.display();
     }
 }
@@ -97,19 +101,35 @@ public void insertAtBeginning(int data){
 
 // 10 -> 20 -> 30 -> null
 
-public class Main{
-    public static void main(String[] args){
-        LinkedList List = new LinkedList();
-
-        list.insert(10);
-        list.insert(20);
-        list.insert(30);
-
-        list.insertAtBeginnig(5);
-
-        list.display();
-    }
-}
 // 5 -> 10 -> 20 -> 30 -> null
 
-    
+ public void insertAtPosition(int data, int position){
+     Node newNode = new NOde(data);
+
+     //Case 1: Insert at beginning
+     if(position == 0){
+         newNode.next = head;
+         head = newNode;
+         return;
+     }
+     Node temp = head;
+     int currentPos = 0;
+
+     // Traverse to node before the position
+     while(temp != null && currentPos < position - 1){
+         temp = temp.next;
+         currentPos++;
+     }
+
+     // If position is out of bounds
+     if(temp == null){
+         System.out.println("Invaliv position");
+         return;
+     }
+
+     // Insert
+     newNode.next = temp.next;
+     temp.next = newNode;
+ }
+     
+     
