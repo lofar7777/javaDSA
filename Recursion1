@@ -1,0 +1,16 @@
+// When a function calls itself until a specified condition is met.
+int count = 0;
+void f(){
+  if(count == 4){
+    return;
+    }
+  Syste.out.println(count);
+  count++;
+  f();
+  }
+// When we call this function in the main method. 
+// The function gets executed and the value of count will be printed until it reaches the base case.
+// Until the base case is reached, the function remain waiting in the stack memory. 
+// When the last function call is finished, then it returns to the function that called itself. 
+// in this way the function returns one by one and the stack memory is freed. 
+// And at last the other lines of codes are executed and process is finished.
