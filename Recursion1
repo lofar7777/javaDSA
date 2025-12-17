@@ -4,7 +4,7 @@ void f(){
   if(count == 4){
     return;
     }
-  Syste.out.println(count);
+  System.out.println(count);
   count++;
   f();
   }
@@ -14,3 +14,32 @@ void f(){
 // When the last function call is finished, then it returns to the function that called itself. 
 // in this way the function returns one by one and the stack memory is freed. 
 // And at last the other lines of codes are executed and process is finished.
+
+//Fibonacci function using recursion
+public static void fibonacci(int a, int b, int n){
+    // Base case
+    if(n == 0){
+      return;
+}
+    int c = a + b;
+    System.out.println(c);
+    fibonacci(b, c, n-1);
+}
+
+// we have to give int a = 0; int b = 1, and n is the number upto where you have to print the fibonacci series. 
+// for ex: n = 10
+// So when we call fibonacci function in the main method
+// we will get the output: 
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
+// in this way we can use recursion to print the fibonacci series
