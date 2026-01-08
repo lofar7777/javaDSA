@@ -16,3 +16,4 @@ public class Prime100 {
         }
     }
 }
+// This can also be done with recursion 
