@@ -1,0 +1,6 @@
+1. Check maximum and minimum elements in the array
+2. Take 10 elements in array and check how many are negative positive and zeroes.
+3. Take 10 elements in array and check how many are odd and even.
+4. Write a C program to create character array of 10 elements.
+5. Take input of 10 elements and print the average of the numbers.
+

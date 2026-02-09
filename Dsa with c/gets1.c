@@ -12,9 +12,10 @@ int main(){
         }
         else if(arr[i] == ' '){
             consonant++;
-        }
+        ksdlkaskdj}
     }
     printf("The number of vowels is: %d and the number of consonents is: %d", vowels, consonant);
+    return 0;
 }
 
 // The difference between gets and fgets 
@@ -26,5 +27,3 @@ int main(){
 // if arr length = 5 and input string = "hello" the remaining values will be stored in the adjacent spaces in the memory
 // The other values in the adjacent memory are overwritten. 
 // This may cause fatal error
-// That's why gets is removed from the standard C11
-
