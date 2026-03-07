@@ -1,5 +1,6 @@
 #include<stdio.h>
-
+// Balanced parenthess function for all three conditions 
+// *important
 int isBalancedAll(char arr[]){
     int i = 0;
     int top = 1;
@@ -25,6 +26,8 @@ int isBalancedAll(char arr[]){
     return 0;}
 }
 
+
+// Balanced parenthesis function for only push and pop function
 int isBalanced(char arr[]){
     int i = 0;
     int top = -1;
