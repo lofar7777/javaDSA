@@ -1,0 +1,24 @@
+ Hashing
+ 		hashing means -> prestoring and fetching
+	
+	Create a hash array that will count the number of times an element is occuring in an array.
+	We have to declare a precompution that does the job.
+	Then we can fetch the number of elements directly from the hash array.
+
+The highest length of array that we can declare inside main() is 10^6;
+Any array declared with size above 10^6 will give an error i.e. segmentation fault.
+For int -> 10^6
+for boolean -> 10^7
+
+And if we declare it globally we can go up to [1e7] i.e. 10^7.nearAbout
+for boolean -> 10^8
+
+ASCII values -> 0 - 48
+1-49
+A-65
+Z - 90
+a-97
+z - 122
+
+we can do like > int x = 'a';
+it will store the ascii value of a in x i.e., 97.
